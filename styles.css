@@ -1,0 +1,401 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;} /* normalize */
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+/*clearfix*/
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*setup*/
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h3,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 51px;
+    font-family: Italiana;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.readmoreButton {
+    font-family: Italiana;
+    font-size: 25px;
+    line-height: 1.16;
+    padding: 12px;
+    border: 1px solid orange;
+    color: white;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: none;
+}
+
+.section {
+    background-color: #201e1f;
+}
+
+.sectionContent {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+/* Header styles */
+
+.sectionSplash {
+    background-color: #131113;
+    height: 100vh;
+}
+
+.sectionSplashContent {
+    background-image: url("assets/group-4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+}
+
+.topNavBar {
+    position: relative;
+    list-style: none;
+    margin-left: 160px;
+    top: 30px;
+}
+
+.topNavBar .topNavElement{
+    font-family: 'Lato';
+    font-weight: 400;
+    color: #faba63;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.aroraHeadingText{
+    color: white;
+    width: 513px;
+    height: 280.8px;
+    font-family: Italiana;
+    font-size: 162px;
+    line-height: 0.87;
+    text-align: right;
+}
+
+.aroraHeadingTextJewelers {
+    font-family: Lato;
+    font-size: 45px;
+    font-weight: 300;
+    text-align: right;
+    color: #faba63;
+  }
+
+  .headingTextWrapper {
+      text-align: right;
+      width: 514px;
+      margin-top: 100px;
+      margin-left: 15%;
+  }
+
+  /* Handcrafted Section Styles */
+
+.sectionHandcrafted {
+    background-color: #14171f;
+    padding: 110px 0;
+}
+
+.handcraftedImageWrapper {
+    width: 30%;
+    float:left;
+}
+
+.handcraftedTextWrapper {
+    width: calc(70% - 20px);
+    margin-left: 20px;
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Lato;
+    line-height: 1.45;
+}
+
+.sectionHandcraftedContent {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.handcraftedTextWrapper p {
+    margin-bottom: 40px;
+}
+
+/* Latest Collection Styles */
+.sectionLatestCollection{
+    background-color: #201e1f;
+    padding: 100px 0 180px 0;
+}
+
+.sectionLatestCollectionContent {
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+
+.sectionLatestCollectionContent h2 {
+    margin-bottom: 86px;
+}
+
+.latestCollectionGallery {
+    width: 100%;
+}
+
+.galleryImage {
+    width: calc(100% / 3 - (5% / 3));
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.latestCollectionGallery div:nth-of-type(2) {
+    margin: 0 2.5%;
+}
+
+/* Catalogue / mini nav links styles */
+.sectionCatalogue{
+    background-color: #0A0B12;
+}
+
+.sectionCatalogueContent {
+    width: 60%;
+    height: 300px;
+    padding: 70px 0 80px 0;
+}
+
+.linkContainer {
+    width: calc(100% / 3);
+    text-align: center;
+    color: #faba63;
+    float: left;
+}
+
+.linkContainer i {
+    font-size: 70px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.linkContainer a {
+    color: white;
+}
+
+.catalogueContainerLinks {
+    font-family: Italiana;
+    font-size: 30px;
+}
+
+
+
+/* Sustainable materials styles  */
+.sectionSustainableMaterials {
+    background-color: #141114;
+}
+
+.sectionSustainableMaterialsContent {
+    width: 100%;
+    max-width: 1600px;
+    color: white;
+}
+
+.informationContainer {
+    width: 50%;
+    float: left;
+}
+
+.textContainer {
+    padding: 6% 10%;
+}
+
+.informationContainer p {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+/* Footer styles  */
+.sectionFooter {
+    background-color: #14171f;
+}
+
+
+/* Media queries */
+
+@media (max-width: 1400px) {
+
+    /* header section */
+    .sectionSplashContent {
+        background-position: 50%;
+    }
+
+    .headingTextWrapper {
+        margin-left: 5%;
+    }
+
+    /* Latest Collection section */
+
+    .sectionLatestCollection {
+        padding-bottom: 100px;
+    }
+
+    /* Sustainable Materials section */
+
+    .textContainer {
+        padding: 3% 5%;
+    }
+
+    .textContainer p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    .textContainer a {
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    .textContainer h2 {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 850px){
+
+    .readmoreButton {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        min-width: 160px;
+        text-align: center;
+        }
+
+    h2 {
+        text-align: center;
+    }
+
+    /* Header section */
+
+    .topNavBar {
+        margin-left: 60px;
+    }
+
+    .aroraHeadingText {
+        font-size: 100px;
+        width: 300px;
+        height: 170px;
+    }
+
+    .aroraHeadingTextJewelers {
+        font-size: 30px;
+    }
+
+    .headingTextWrapper {
+        width: 301px;
+    }
+
+    /* Handcrafted section */
+
+    .handcraftedImageWrapper {
+        float: none;
+        width: 100%;
+        margin-bottom: 51px;
+    }
+
+    .handcraftedTextWrapper {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Latest Collection section */
+
+    .sectionLatestCollection {
+        border: 1px solid #979797;
+        border-top: none;
+    }
+
+    .sectionLatestCollectionContent {
+        width: 90%;
+    }
+
+    .galleryImage {
+    width: calc(100% / 2 - 5%);
+    }
+
+    .latestCollectionGallery div:nth-of-type(2) {
+        margin: 0 2.5%;
+    }
+
+    .latestCollectionGallery div:nth-of-type(3) {
+        display: none;
+    }
+
+    /* Catalogue section */
+
+    .linkContainer {
+        width: 100%;
+        float: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    
+    /* Header section */
+
+    .topNavBar {
+        visibility: hidden;
+    }
+
+    .aroraHeadingText {
+        font-size: 50px;
+        width: 160px;
+        height: 90px;
+    }
+
+    .aroraHeadingTextJewelers {
+        font-size: 16px;
+    }
+
+    .headingTextWrapper {
+        width: 161px;
+    }
+
+    .sectionSplashContent {
+        background-position: 62%;
+    }
+
+    /* Handcrafted section */
+
+    
+    .handcraftedTextWrapper h2 {
+        font-size: 40px;
+    }
+
+}
