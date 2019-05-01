@@ -70,6 +70,7 @@ a {
 }
 
 .sectionSplashContent {
+    position: relative;
     background-image: url("assets/group-4.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,6 +90,21 @@ a {
     right: 20px;
     top: 10px;
     visibility: hidden;
+}
+
+.socialIconsWrapper {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    text-align: center;
+}
+
+.socialIconsWrapper a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
 }
 
 .hamburgerMenu i {
@@ -295,6 +311,7 @@ a {
     border: none;
     font-size: 20px;
     font-family: Lato;
+    font-style: italic;
 }
 
 .submitButton {
@@ -389,6 +406,8 @@ a {
 }
 
 @media (max-width: 850px){
+
+    /* collapse into mobile view while maintaining top header nav links */
 
     .readmoreButton {
         display: block;
@@ -536,6 +555,7 @@ a {
 
     .emailInput {
         width: 90%;
+        text-align: center;
     }
 
     .submitButton {
@@ -569,6 +589,7 @@ a {
 
 @media (max-width: 500px) {
 
+    /* For small screens (full mobile view w/ hamburger menu) */
     
     /* Header section */
 
@@ -578,6 +599,10 @@ a {
 
     .hamburgerMenu {
         visibility: visible;
+    }
+
+    .socialIconsWrapper {
+        visibility: hidden;
     }
 
     .aroraHeadingText {
