@@ -8,6 +8,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+body {
+    min-width: 320px;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -84,6 +88,7 @@ a {
     position: absolute;
     right: 20px;
     top: 10px;
+    visibility: hidden;
 }
 
 .hamburgerMenu i {
@@ -237,7 +242,6 @@ a {
 .informationContainer {
     width: 50%;
     float: left;
-    /* position: relative; */
 }
 
 .textContainer {
@@ -247,25 +251,12 @@ a {
 .informationContainer p {
     font-size: 20px;
     margin-bottom: 60px;
-    /* line-height: 1.45; */
-    /* font-weight: 300; */
-}
-
-.topTextContainer{
-    /* right: 50%; */
+    line-height: 1.45;
+    font-weight: 300;
 }
 
 .topImageContainer {
-    /* left: 50%; */
     float: right;
-}
-
-.bottomTextContainer{
-    /* right: -50%; */
-}
-
-.bottomImageContainer {
-    /* left: -50%; */
 }
 
 /* Footer styles  */
@@ -458,11 +449,12 @@ a {
     }
 
     .galleryImage {
-    width: calc(100% / 2 - 5%);
+        width: calc(50% - 2%);
+        margin: 0 1%;
     }
 
     .latestCollectionGallery div:nth-of-type(2) {
-        margin: 0 2.5%;
+       margin: 0 1%; 
     }
 
     .latestCollectionGallery div:nth-of-type(3) {
@@ -531,7 +523,6 @@ a {
     .bottomNavContainer {
         float: none;
         width: 100%;
-        /* background: black; */
         height: 100px;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -540,7 +531,6 @@ a {
     .stayUpdatedContainer {
         float: none;
         width: 100%;
-        /* background: black; */
         height: 200px;
     }
 
@@ -586,6 +576,10 @@ a {
         visibility: hidden;
     }
 
+    .hamburgerMenu {
+        visibility: visible;
+    }
+
     .aroraHeadingText {
         font-size: 50px;
         width: 160px;
@@ -609,6 +603,23 @@ a {
     
     .handcraftedTextWrapper h2 {
         font-size: 40px;
+    }
+
+    /* Sustainable materials section */
+
+
+
+    .textContainer {
+        padding: 20px 20px;
+        height: 350px;
+    }
+
+    .textContainer p{
+        margin-bottom: 10px;
+    }
+
+    .textContainer h2{
+        font-size: 30px;
     }
 
 }
