@@ -222,6 +222,7 @@ a {
     color: white;
 }
 
+
 .informationContainer {
     width: 50%;
     float: left;
@@ -236,9 +237,89 @@ a {
     margin-bottom: 60px;
 }
 
+.bottomImageContainer, .bottomTextContainer {
+    position: relative;
+}
+
+.bottomTextContainer{
+    right: -50%;
+}
+
+.bottomImageContainer {
+    left: -50%;
+}
+
 /* Footer styles  */
 .sectionFooter {
     background-color: #14171f;
+}
+
+.sectionFooterContent {
+    color: white;
+    width: 80%;
+    height: 340px;
+    max-width: 1600px;
+    padding: 90px 0 110px 0;
+}
+
+.bottomNavContainer {
+    width: 25%;
+    float: left;
+}
+
+.stayUpdatedContainer {
+    width: calc(50%);
+    float: left;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+    font-family: Lato;
+}
+
+.emailInput {
+    width: 66%;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    padding-left: 20px;
+    border: none;
+    font-family: Lato;
+}
+
+.submitButton {
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    border: none;
+    font-family: Italiana;
+    /* font-size: 0.8rem; */
+    height: 50px;
+}
+
+.footerHeadings {
+    font-family: Italiana;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+.contactContainer {
+    width: 25%;
+    float: left;
+    text-align: right;
+}
+
+.bottomNavBar {
+    list-style: none;
+}
+
+.bottomNavBar a {
+    font-family: Italiana;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
 }
 
 
@@ -360,7 +441,32 @@ a {
     .linkContainer {
         width: 100%;
         float: none;
+        margin-bottom: 60px;
     }
+
+    .sectionCatalogueContent .linkContainer:last-of-type{
+        margin-bottom: 0;
+    }
+
+    .sectionCatalogueContent {
+        height: 600px;
+        padding-bottom: 0;
+    }
+
+    /* Sustainable materials section */
+
+    .informationContainer {
+        width: 100%;
+        float: none;
+    }
+
+    .textContainer {
+        padding: 60px 80px 60px 80px;
+    }
+
+    .bottomImageContainer, .bottomTextContainer {
+    position: static;
+    }   
 
 }
 
